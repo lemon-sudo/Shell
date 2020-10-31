@@ -25,16 +25,21 @@ echo -e "${YELLOW}NO.1 Start add aliyun ..."
 echo -e "${PLAIN}\c"
 echo "git remote add aliyun git@lemongrass.top:lemon-sudo/$project_name"
 git remote add aliyun git@lemongrass.top:lemon-sudo/$project_name
+git push --set-upstream aliyun master
 echo
 
-echo -e "${YELLOW}NO.1 Start add gitee ..."
-echo -e "${PLAIN}\c"
-echo "git remote add gitee git@gitee.com:lemon-sudo/$project_name"
-git remote add gitee git@gitee.com:lemon-sudo/$project_name
-echo
-
-echo -e "${YELLOW}NO.3 Start add github ..."
+echo -e "${YELLOW}NO.2 Start add github ..."
 echo -e "${PLAIN}\c"
 echo "git remote add github git@github.com:lemon-sudo/$project_name"
 git remote add github git@github.com:lemon-sudo/$project_name
+git push --set-upstream github master
 echo
+
+echo -e "${YELLOW}NO.3 Start add gitee ..."
+echo -e "${PLAIN}\c"
+echo "git remote add gitee git@gitee.com:lemon-sudo/$project_name"
+git remote add gitee git@gitee.com:lemon-sudo/$project_name
+git push --set-upstream gitee master
+echo
+
+echo -e "${YELLOW}END!"
